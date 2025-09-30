@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Our Services | Next Horizon Talent - Complete IT, Non-IT Career Support & Job Placement</title>
+    <meta name="description"
+        content="Comprehensive IT, Non-IT career services including job placement, resume optimization, interview coaching and career growth guidance for  professionals in the USA.">
+    <meta name="keywords"
+        content="IT, Non-IT job placement, resume building, interview coaching, H1B support, OPT CPT guidance, career counseling, Next Horizon Talent services">
+    <meta name="author" content="Next Horizon Talent">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Our Services | Next Horizon Talent - Complete IT, Non-IT Career Support">
+    <meta property="og:description"
+        content="job placement - comprehensive career services for IT, Non-IT professionals seeking opportunities in the USA.">
+    <meta property="og:image" content="https://nexthorizontalents.com/images/services-og.jpg">
+    <meta property="og:url" content="https://nexthorizontalents.com/services.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Our Services | Next Horizon Talent - Complete IT, Non-IT Career Support">
+    <meta name="twitter:description"
+        content="Comprehensive IT, Non-IT career services for professionals seeking USA opportunities.">
+    <meta name="twitter:image" content="https://nexthorizontalents.com/images/services-twitter.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io (1)/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io (1)/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io (1)/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io (1)/site.webmanifest">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation Styles */
+        .navbar {
+            background: #1e293b;
+            box-shadow: 0 4px 20px rgba(30, 64, 175, 0.3);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .nav-logo h2 {
+            color: #ffffff;
+            margin: 0;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .nav-logo a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            align-items: center;
+        }
+
+        .nav-item {
+            margin-left: 2rem;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #e2e8f0;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #60a5fa;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: linear-gradient(90deg, #60a5fa, #1e40af);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            background-color: #e2e8f0;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        /* Page Hero */
+        .page-hero {
+            background: linear-gradient(96deg, #000000 0%, #1b1b1b 100%);
+            color: #1e40af;
+            padding: 140px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: radial-gradient(circle at 30% 30%, rgba(96, 165, 250, 0.2) 0%, transparent 50%),
+                radial-gradient(circle at 70% 70%, rgba(226, 232, 240, 0.1) 0%, transparent 50%);
+            z-index: 0;
+        }
+
+        .page-hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            
+        }
+
+        .page-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #ffffff;
+        }
+
+        .breadcrumb {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .breadcrumb a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb a:hover {
+            color: white;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+            background: linear-gradient(96deg, #0c0c0c 0%, #061a37 100%);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: #1e40af;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .section-header p {
+            font-size: 1.2rem;
+            color: #ffffff;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: #ffffff19;
+            padding: 2.5rem;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            border-top: 4px solid #1e40af;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .service-card>* {
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: #60a5fa;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            transition: all 0.3s ease;
+        }
+
+        .service-card h3 {
+            color: #1e40af;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .service-card p {
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+
+        .service-card ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .service-card li {
+            padding: 0.75rem 0;
+            color: #ffffff;
+            position: relative;
+            padding-left: 2rem;
+            border-bottom: 1px solid #f1f5f9;
+            transition: all 0.3s ease;
+        }
+
+        .service-card li:last-child {
+            border-bottom: none;
+        }
+
+        .service-card li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0.75rem;
+            color: #1e40af;
+            font-weight: bold;
+            font-size: 1.1rem;
+            width: 20px;
+            height: 20px;
+            background: rgba(30, 64, 175, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+        }
+
+        /* Process Section */
+        .process-section {
+            padding: 100px 0;
+            background: linear-gradient(96deg, #0c0c0c 0%, #061a37 100%);
+            color: white;
+        }
+
+        .process-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            color: #1e40af;
+        }
+
+        .process-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .process-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+            color: white;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .process-step {
+            text-align: center;
+            padding: 2rem;
+            background: #ffffff19;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .process-step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: #60a5fa;
+            color: #1e40af;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 1.5rem;
+        }
+
+        .process-step h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .process-step p {
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(96deg, #0c0c0c 0%, #061a37 100%);
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .cta-content h2 {
+            font-size: 2.5rem;
+            color: #1e40af;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .cta-content p {
+            font-size: 1.1rem;
+            color: #ffffff;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.875rem 2rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: 2px solid transparent;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+        }
+
+        .btn-primary {
+            background-color: #2563eb;
+            color: white;
+            border-color: #2563eb;
+        }
+
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+            border-color: #1d4ed8;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #2563eb;
+            border-color: #2563eb;
+        }
+
+        .btn-secondary:hover {
+            background-color: #2563eb;
+            color: white;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #1e293b;
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3,
+        .footer-section h4 {
+            color: #60a5fa;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section p {
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: #60a5fa;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #374151;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: #60a5fa;
+        }
+
+        .footer-contact p {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #ffffff;
+            padding-top: 2rem;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            color: #ffffff;
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 80px;
+                flex-direction: column;
+                background: linear-gradient(135deg, #1e40af 0%, #64748b 100%);
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 27px rgba(30, 64, 175, 0.3);
+                padding: 2rem 0;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .nav-item {
+                margin: 1rem 0;
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            .page-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-card {
+                padding: 2rem;
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-content h2 {
+                font-size: 2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 280px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+
+            .section-header h2 {
+                font-size: 1.8rem;
+            }
+
+            .service-card {
+                padding: 1.5rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .slide-in-left {
+            animation: slideInLeft 0.8s ease-out;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="./index.html">Next Horizon Talent</a></h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-link" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <div class="industry-header">
+                        <a href="./industries.html" class="nav-link">Industries</a>
+                        <button id="industryToggle" class="dropdown-btn">▼</button>
+                    </div>
+                    <ul class="dropdown-menu" id="industriesMenu">
+                        <li><a href="./IT.html">Information Technology</a></li>
+                        <li><a href="./healthCare.html">Healthcare</a></li>
+                        <li><a href="./pharmaceutical.html">Pharmaceutical</a></li>
+                        <li><a href="./administrative.html">Administrative</a></li>
+                        <li><a href="./HR.html">Human Resources</a></li>
+                        <li><a href="./engineering.html">Engineering</a></li>
+                        <li><a href="./accounting.html">Accounting And Finance</a></li>
+                        <li><a href="./legal.html">Legal</a></li>
+                        <li><a href="./manufacturing.html">Manufacturing</a></li>
+                        <li><a href="./construction.html">Construction</a></li>
+                        <li><a href="./creative.html">Creative & Digital Marketing</a></li>
+                        <li><a href="./sales.html">Sales & Marketing</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="./contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./Employers.html" class="nav-link">Employers</a>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content fade-in-up">
+                <h1>Our Services</h1>
+                <p>Comprehensive support for your IT career journey in the USA</p>
+                <div class="breadcrumb">
+                    <a href="./index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Services</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Comprehensive Services</h2>
+                <p>End-to-end career support designed to help you succeed in the competitive US , Non-IT market</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>IT, Non-IT Job Placement (USA)</h3>
+                    <p>Direct placement with top US companies across various IT, Non-IT domains including software
+                        development,
+                        data science, cloud computing, and cybersecurity. We connect you with opportunities that match
+                        your skills and career goals.</p>
+                    <ul>
+                        <li>Full-time positions with leading companies</li>
+                        <li>Contract opportunities for flexibility</li>
+                        <li>Remote and on-site roles nationwide</li>
+                        <li>Competitive salary packages</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Resume Building & Optimization</h3>
+                    <p>Professional resume crafting and optimization specifically designed for the US job market,
+                        ensuring your skills and experience shine through to potential employers and ATS systems.</p>
+                    <ul>
+                        <li>ATS-friendly formatting and structure</li>
+                        <li>Industry-specific keywords optimization</li>
+                        <li>LinkedIn profile optimization</li>
+                        <li>Cover letter writing assistance</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Mock Interviews & Career Counseling</h3>
+                    <p>Comprehensive interview preparation and career guidance to help you confidently navigate the US
+                        job market and interview processes with personalized coaching sessions.</p>
+                    <ul>
+                        <li>Technical interview preparation</li>
+                        <li>Behavioral interview coaching</li>
+                        <li>Salary negotiation guidance</li>
+                        <li>Cultural adaptation support</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <h3>OPT/CPT/H1B Support</h3>
+                    <p>Expert guidance on processes, documentation, and compliance to ensure smooth transitions and
+                        legal employment in the United States with ongoing support throughout your journey.</p>
+                    <ul>
+                        <li>Documentation support and review</li>
+                        <li>Compliance guidance and monitoring</li>
+                        <li>Status change consultation</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Employer Connections</h3>
+                    <p>Direct marketing to our extensive network of US employers and clients, ensuring your profile
+                        reaches the right decision-makers and increasing your chances of landing your dream job.</p>
+                    <ul>
+                        <li>Direct client submissions</li>
+                        <li>Employer networking events</li>
+                        <li>Industry connections and referrals</li>
+                        <li>Partnership with Fortune 500 companies</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Career Growth Support</h3>
+                    <p>Ongoing career development support to help you advance in your US career, including skill
+                        development recommendations and growth strategies tailored to your professional goals.</p>
+                    <ul>
+                        <li>Skill gap analysis and recommendations</li>
+                        <li>Career path planning and strategy</li>
+                        <li>Professional development guidance</li>
+                        <li>Long-term career mentorship</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="process-header">
+                <h2>Our Proven Process</h2>
+                <p>A systematic approach to ensure your success in the US job market</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Initial Consultation</h3>
+                    <p>We start with a comprehensive assessment of your skills, experience, and career goals to create a
+                        personalized strategy.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Profile Enhancement</h3>
+                    <p>Optimize your resume, LinkedIn profile, and prepare you for the US job market with targeted
+                        improvements.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Job Matching</h3>
+                    <p>Connect you with relevant opportunities that align with your skills and career aspirations
+                        through our network.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Interview Preparation</h3>
+                    <p>Intensive coaching sessions to prepare you for technical and behavioral interviews with
+                        confidence.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h3>Placement & Support</h3>
+                    <p>Secure your position and provide ongoing support for processes and career growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Career?</h2>
+                <p>Join hundreds of successful , Non-IT professionals who have achieved their American dream with Next
+                    Horizon
+                    Talents. Let's start your journey today.</p>
+                <div class="cta-buttons">
+                    <a href="./contact.html" class="btn btn-primary">Get Started Now</a>
+                    <a href="./about.html" class="btn btn-secondary">Learn More About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Next Horizon Talent</h3>
+                    <p>Your trusted partner for IT, Non-IT career success in the USA. Connecting talent with American
+                        opportunities through ethical and transparent practices.</p>
+                    <div class="social-links">
+                        <a href="http://linkedin.com/company/nexorizontalent" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./industries.html">Industries</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="./services.html">IT, Non-IT Job Placement</a></li>
+                        <li><a href="./services.html">Resume Building</a></li>
+                        <li><a href="./services.html">Interview Coaching</a></li>
+                        <li><a href="./services.html">Career Counseling</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> 30 N Gould Ste Sheridan Wyoming 82801</p>
+                        <p><i class="fas fa-phone"></i> +1 626 309 9569</p>
+                        <p><i class="fas fa-envelope"></i> info@nexthorizontalents.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2024 Next Horizon Talent. All rights reserved. |
+                    <a href="./privacy-policy.html">Privacy Policy</a> |
+                    <a href="./terms&conditions.html">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const mobileMenu = document.getElementById("mobile-menu");
+        const navMenu = document.getElementById("nav-menu");
+
+        mobileMenu.addEventListener("click", () => {
+            mobileMenu.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll(".nav-link").forEach((link) => {
+            link.addEventListener("click", () => {
+                mobileMenu.classList.remove("active");
+                navMenu.classList.remove("active");
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener("scroll", () => {
+            const navbar = document.getElementById("navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute("href"));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: "smooth",
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px",
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll(".service-card, .process-step").forEach((el) => {
+            el.style.opacity = "0";
+            el.style.transform = "translateY(30px)";
+            el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+            observer.observe(el);
+        });
+
+        // Button hover effects
+        document.querySelectorAll('.btn-primary').forEach(btn => {
+            btn.addEventListener('mouseenter', function () {
+                this.style.backgroundColor = '#1d4ed8';
+                this.style.borderColor = '#1d4ed8';
+                this.style.transform = 'translateY(-1px)';
+                this.style.boxShadow = '0 4px 12px rgba(37, 99, 235, 0.3)';
+            });
+
+            btn.addEventListener('mouseleave', function () {
+                this.style.backgroundColor = '#2563eb';
+                this.style.borderColor = '#2563eb';
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = 'none';
+            });
+        });
+
+        document.querySelectorAll('.btn-secondary').forEach(btn => {
+            btn.addEventListener('mouseenter', function () {
+                this.style.backgroundColor = '#2563eb';
+                this.style.color = 'white';
+                this.style.transform = 'translateY(-1px)';
+                this.style.boxShadow = '0 4px 12px rgba(37, 99, 235, 0.2)';
+            });
+
+            btn.addEventListener('mouseleave', function () {
+                this.style.backgroundColor = 'transparent';
+                this.style.color = '#2563eb';
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = 'none';
+            });
+        });
+
+        // Loading animation
+        window.addEventListener("load", () => {
+            document.body.classList.add("loaded");
+        });
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>

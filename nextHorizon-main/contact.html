@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Contact Us | Next Horizon Talent - Get Started with Your IT, NON-IT Career Journey</title>
+    <meta name="description"
+        content="Contact Next Horizon Talent for IT, Non-IT Job Placement, career guidance. Reach our USA-based team for personalized career consultation and support.">
+    <meta name="keywords"
+        content="contact Next Horizon Talent, IT, NON-IT career consultation, job placement contact, career guidance, USA office contact">
+    <meta name="author" content="Next Horizon Talent">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title"
+        content="Contact Us | Next Horizon Talent - Get Started with Your IT, NON-IT Career Journey">
+    <meta property="og:description"
+        content="Ready to transform your IT, NON-IT career? Contact our expert team for personalized guidance and job placement support.">
+    <meta property="og:image" content="https://nexthorizontalents.com/images/contact-og.jpg">
+    <meta property="og:url" content="https://nexthorizontalents.com/contact.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title"
+        content="Contact Us | Next Horizon Talent - Get Started with Your IT, NON-IT Career Journey">
+    <meta name="twitter:description"
+        content="Ready to transform your IT, NON-IT career? Contact our expert team today.">
+    <meta name="twitter:image" content="https://nexthorizontalents.com/images/contact-twitter.jpg">
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io (1)/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io (1)/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io (1)/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io (1)/site.webmanifest">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #121212;
+        }
+
+        .consent-form {
+            max-width: 700px;
+            margin: 15px auto 20px;
+            /* Added bottom margin so button doesn't stick */
+            padding: 15px 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #ffffff19;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: white;
+            text-align: justify;
+            /* Centers the consent text */
+        }
+
+        .consent-form span {
+            display: inline-block;
+            width: 100%;
+        }
+
+        .consent-form strong {
+            color: #1e40af;
+        }
+
+        .consent-form a {
+            color: #1e40af;
+            text-decoration: underline;
+        }
+
+        .consent-form a:hover {
+            text-decoration: none;
+        }
+
+        /* Add space between consent text and button */
+        #submitBtn {
+            margin-top: 15px;
+        }
+
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation Styles */
+        .navbar {
+             background: rgba(50, 58, 63, 0.8);
+            backdrop-filter: opacity(800px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 30px rgb(225, 225, 225 ,0.2);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .nav-logo h2 {
+            color: #ffffff;
+            margin: 0;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .nav-logo a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            align-items: center;
+        }
+
+        .nav-item {
+            margin-left: 2rem;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #e2e8f0;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #40f3e4;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: linear-gradient(90deg, #60a5fa, #1e40af);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            background-color: #0063e4;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        /* Page Hero */
+        .page-hero {
+            background:linear-gradient(96deg, #000000 0%, #1b1b1b 100%);
+            color: white;
+            padding: 140px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: linear-gradient(96deg, #000000 0%, #1b1b1b 100%);
+        }
+
+        .page-hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .page-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .breadcrumb {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .breadcrumb a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb a:hover {
+            color: white;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 100px 0;
+            background-color: linear-gradient(96deg, #0c0c0c 0%, #061a37 100%);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: #1e40af;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .section-header p {
+            font-size: 1.2rem;
+            color: white;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        /* Contact Form */
+        .contact-form-container {
+            background: #ffffff19;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-form-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background:#ffffff19;
+            z-index: 1;
+        }
+
+        .contact-form {
+            position: relative;
+            z-index: 2;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color:#1e40af;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #05325c;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-family: inherit;
+            background-color: #fffffffa;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #1e40af;
+            background-color: white;
+            box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .error-message {
+            color: #ef4444;
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+            display: block;
+            min-height: 1.2rem;
+        }
+
+        .btn {
+            padding: 0.875rem 2rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: 2px solid transparent;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            width: 100%;
+        }
+
+        .btn-primary {
+            background-color: #2563eb;
+            color: rgba(4, 5, 77, 0.808);
+            border-color: #2563eb;
+        }
+
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+            border-color: #1d4ed8;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        .btn-primary:disabled {
+            background-color: #9ca3af;
+            border-color: #9ca3af;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        /* Contact Info */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            padding: 2rem;
+            background: #ffffff19;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border-left: 4px solid #1e40af;
+        }
+
+        .contact-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            color: #1e40af;
+            margin-top: 0.25rem;
+            width: 40px;
+            height: 40px;
+            background: rgba(30, 64, 175, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-details h4 {
+            color: #1e40af;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .contact-details p {
+            color: white;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .contact-details a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-details a:hover {
+            color: #1e40af;
+        }
+
+        /* WhatsApp Special Styling */
+        .whatsapp-item {
+            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+            color: white;
+            border-left-color: #25d366;
+        }
+
+        .whatsapp-item .contact-icon {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        .whatsapp-item .contact-details h4 {
+            color: white;
+        }
+
+        .whatsapp-item .contact-details p,
+        .whatsapp-item .contact-details a {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .whatsapp-item .contact-details a:hover {
+            color: white;
+        }
+
+        /* Map Container */
+        .map-container {
+            background: #ffffff19;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            display: block;
+        }
+
+        .map-container a {
+            display: block;
+            padding: 1rem;
+            background: #1e40af;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .map-container a:hover {
+            background: #1d4ed8;
+        }
+
+        /* Success Message */
+        .success-message {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+            display: none;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: 0 5px 15px rgba(16, 185, 129, 0.3);
+        }
+
+        .success-message.show {
+            display: flex;
+        }
+
+        .success-message i {
+            font-size: 1.5rem;
+        }
+
+        /* Quick Contact Bar */
+        .quick-contact {
+            background: linear-gradient(96deg, #0c0c0c 0%, #061a37 100%);
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        .quick-contact-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .quick-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .quick-contact-item i {
+            font-size: 1.1rem;
+        }
+
+        .quick-contact-item a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .quick-contact-item a:hover {
+            opacity: 0.8;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #323a3f;
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3,
+        .footer-section h4 {
+            color: #60a5fa;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section p {
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: #60a5fa;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #374151;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: #60a5fa;
+        }
+
+        .footer-contact p {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: #cbd5e1;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            padding-top: 2rem;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            color: #9ca3af;
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 80px;
+                flex-direction: column;
+                background: linear-gradient(135deg, #1e40af 0%, #64748b 100%);
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 27px rgba(30, 64, 175, 0.3);
+                padding: 2rem 0;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .nav-item {
+                margin: 1rem 0;
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            .page-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .contact-form-container {
+                padding: 2rem;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .quick-contact-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+
+            .contact-form-container {
+                padding: 1.5rem;
+            }
+
+            .contact-item {
+                padding: 1.5rem;
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .section-header h2 {
+                font-size: 1.8rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="./index.html">Next Horizon Talent</a></h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-link" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <div class="industry-header">
+                        <a href="./industries.html" class="nav-link">Industries</a>
+                        <button id="industryToggle" class="dropdown-btn">▼</button>
+                    </div>
+                    <ul class="dropdown-menu" id="industriesMenu">
+                        <li><a href="./IT.html">Information Technology</a></li>
+                        <li><a href="./healthCare.html">Healthcare</a></li>
+                        <li><a href="./pharmaceutical.html">Pharmaceutical</a></li>
+                        <li><a href="./administrative.html">Administrative</a></li>
+                        <li><a href="./HR.html">Human Resources</a></li>
+                        <li><a href="./engineering.html">Engineering</a></li>
+                        <li><a href="./accounting.html">Accounting And Finance</a></li>
+                        <li><a href="./legal.html">Legal</a></li>
+                        <li><a href="./manufacturing.html">Manufacturing</a></li>
+                        <li><a href="./construction.html">Construction</a></li>
+                        <li><a href="./creative.html">Creative & Digital Marketing</a></li>
+                        <li><a href="./sales.html">Sales & Marketing</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="./contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content fade-in-up">
+                <h1>Get In Touch</h1>
+                <p>Ready to start your journey? Contact our USA-based team today</p>
+                <div class="breadcrumb">
+                    <a href="./index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Contact</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Bar -->
+    <section class="quick-contact">
+        <div class="container">
+            <div class="quick-contact-content">
+                <div class="quick-contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+16263099569">+1 626 309 9569</a>
+                </div>
+                <div class="quick-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@nexthorizontalents.com">info@nexthorizontalents.com</a>
+                </div>
+
+                <div class="quick-contact-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Mon-Fri: 9AM-6PM EST</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Let's Start Your Success Story</h2>
+                <p>Fill out the form below and our expert team will get back to you within 24 hours</p>
+            </div>
+
+
+
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <div class="success-message" id="successMessage">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <strong>Thank you!</strong> Your message has been sent successfully. We'll get back to you
+                            within 24 hours.
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="firstname">First Name *</label>
+                            <input type="text" id="firstname" name="firstname" required placeholder="Enter First Name">
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastname">Last Name *</label>
+                            <input type="text" id="lastname" name="lastname" required placeholder="Enter Last Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="experience">Experience Level</label>
+                            <select id="experience" name="experience">
+                                <option value="">Select Experience Level</option>
+                                <option value="fresher">Fresher (0-1 years)</option>
+                                <option value="junior">Junior (1-3 years)</option>
+                                <option value="mid">Mid-level (3-6 years)</option>
+                                <option value="senior">Senior (6+ years)</option>
+                                <option value="lead">Lead/Architect (8+ years)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="previousJob">Previous Job *</label>
+                            <input type="text" id="previousJob" name="previousJob" required
+                                placeholder="Eg..Nurse, Project Estimator...">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="Tell us about your career goals, current situation, and how we can help you achieve your American dream..."></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+
+                        <div class="consent-form">
+                            <label>
+                                <span>
+                                    <input type="checkbox" id="consentCheckbox" required> By clicking Submit, you
+                                    authorize <strong>Next Horizon Talent</strong> to contact
+                                    you via email, phone, or SMS about job opportunities and recruitment updates.
+                                    Message frequency varies; standard rates apply. Reply STOP to opt out. And help for support +1 6263099569
+                                    Your information will be used only for recruitment and handled as per our
+                                    <a href="./privacy-policy.html" target="_blank" rel="noopener noreferrer">
+                                        Privacy Policy
+                                    </a>
+                                    and
+                                    <a href="./terms&conditions.html" target="_blank" rel="noopener noreferrer">
+                                        Terms and Conditions
+                                    </a>.
+                                </span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" id="submitBtn" disabled>
+                            <i class="fas fa-paper-plane"></i> Submit
+                        </button>
+
+                        <script>
+                            const consentCheckbox = document.getElementById('consentCheckbox');
+                            const submitBtn = document.getElementById('submitBtn');
+
+                            consentCheckbox.addEventListener('change', function () {
+                                submitBtn.disabled = !this.checked;
+                            });
+                        </script>
+
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-form-container">
+                    <div class="success-message" id="jobSuccessMessage">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <strong>Thank you!</strong> We’ve received your job interest. We’ll get back to you shortly.
+                        </div>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-details">
+                                <h4>USA Office</h4>
+                                <p>30 N Gould St Ste R<br>Sheridan, WY 82801<br>United States</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-details">
+                                <h4>Phone Support</h4>
+                                <p><a href="tel:+16263099569">+1 626 309 9569</a></p>
+                                <p style="font-size: 0.9rem; opacity: 0.8;">Available Mon-Fri: 9AM-6PM EST</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-details">
+                                <h4>Email Support</h4>
+                                <p><a href="mailto:info@nexthorizontalents.com">info@nexthorizontalents.com</a></p>
+                                <p style="font-size: 0.9rem; opacity: 0.8;">We respond within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Next Horizon Talent
+
+
+                    </h3>
+                    <p>Your trusted partner for IT, Non-IT career success in the USA. Connecting talent with American
+                        opportunities through ethical and transparent practices.</p>
+                    <div class="social-links">
+                        <a href="http://linkedin.com/company/nexorizontalent" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./industries.html">Industries</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="./services.html">IT, Non-IT Job Placement</a></li>
+                        <li><a href="./services.html">Resume Building</a></li>
+                        <li><a href="./services.html">Interview Coaching</a></li>
+
+                        <li><a href="./services.html">Career Counseling</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i> 30 N Gould St Ste R
+                            Sheridan WY 82801
+                        </p>
+
+                        <p><i class="fas fa-phone"></i> +1 626 309 9569</p>
+                        <p><i class="fas fa-envelope"></i> info@nexthorizontalents.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2024 Next Horizon Talent. All rights reserved. |
+                    <a href="./privacy-policy.html">Privacy Policy</a> |
+                    <a href="./terms&conditions.html">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

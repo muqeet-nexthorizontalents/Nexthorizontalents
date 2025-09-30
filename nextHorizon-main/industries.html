@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <title>
+        Industries | Next Horizon Talent - Complete IT Career Support & Job
+        Placement
+    </title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io (1)/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io (1)/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io (1)/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io (1)/site.webmanifest">
+    <meta name="description"
+        content="Comprehensive IT career services including job placement, resume optimization, interview coaching                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   and career growth guidance for  professionals in the USA." />
+    <meta name="keywords"
+        content="IT, Non-IT Job Placement, resume building, interview coaching, H1B support, OPT CPT guidance, career counseling, Next Horizon Talent services" />
+    <meta name="author" content="Next Horizon Talent" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Our Services | Next Horizon Talent - Complete IT Career Support" />
+    <meta property="og:description"
+        content="job placement to - comprehensive career services for IT professionals seeking opportunities in the USA." />
+    <meta property="og:image" content="https://nexthorizontalents.com/images/services-og.jpg" />
+    <meta property="og:url" content="https://nexthorizontalents.com/services.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Our Services | Next Horizon Talent - Complete IT Career Support" />
+    <meta name="twitter:description"
+        content="Comprehensive IT career services for professionals seeking USA opportunities." />
+    <meta name="twitter:image" content="https://nexthorizontalents.com/images/services-twitter.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="industries.css">
+    <style>
+        /* Reset and Base Styles */
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+                Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background: linear-gradient(96deg, #0c0c0c 0%, #061a37 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation Styles */
+        .navbar {
+            background: #1e293b;
+            box-shadow: 0 4px 20px rgba(30, 64, 175, 0.3);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .nav-logo h2 {
+            color: #ffffff;
+            margin: 0;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .nav-logo a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            align-items: center;
+        }
+
+        .nav-item {
+            margin-left: 2rem;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #e2e8f0;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #60a5fa;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: linear-gradient(90deg, #60a5fa, #1e40af);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            background-color: #e2e8f0;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        /* Page Hero */
+        .page-hero {
+            background: linear-gradient(96deg, #0c0c0c 0%, #061a37 100%);
+            color: white;
+            padding: 140px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: radial-gradient(circle at 30% 30%,
+                    rgba(96, 165, 250, 0.2) 0%,
+                    transparent 50%),
+                radial-gradient(circle at 70% 70%,
+                    rgba(226, 232, 240, 0.1) 0%,
+                    transparent 50%);
+            z-index: 0;
+        }
+
+        .page-hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            color: #1e40af;
+        }
+
+        .page-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .breadcrumb {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .breadcrumb a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb a:hover {
+            color: white;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: #1e40af;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .section-header p {
+            font-size: 1.2rem;
+            color: #1e40af;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border-top: 4px solid #3b82f6;
+            position: relative;
+            overflow: hidden;
+            color: #ffffff;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(251, 250, 250, 0.985);
+            border-top-color: #60a5fa;
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: #60a5fa;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.1);
+        }
+
+        .service-card h3 {
+            color: #1e40af;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .service-card p {
+            color: #e2e8f0;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+
+        .service-card ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .service-card li {
+            padding: 0.75rem 0;
+            color: #e2e8f0;
+            position: relative;
+            padding-left: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .service-card li:last-child {
+            border-bottom: none;
+        }
+
+        .service-card {
+            height: 450px;
+            padding: 1rem;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .service-card li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0.75rem;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 1.1rem;
+            width: 20px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+        }
+
+        .service-card:hover li::before {
+            background: #ffffff;
+            color: #60a5fa;
+        }
+
+        .service-card li:hover {
+            color: #ffffff;
+            padding-left: 2.5rem;
+        }
+
+        /* Process Section */
+        .process-section {
+            padding: 100px 0;
+            background: linear-gradient(96deg, #0c0c0c 0%, #061a37 100%);
+            color: white;
+        }
+
+        .process-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .process-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .process-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .process-step {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .process-step:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: #60a5fa;
+            color: #1e40af;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 1.5rem;
+        }
+
+        .process-step h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .process-step p {
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(96deg, #0c0c0c 0%, #061a37 100%);
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .cta-content h2 {
+            font-size: 2.5rem;
+            color: #1e40af;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .cta-content p {
+            font-size: 1.1rem;
+            color: #ffffff;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.875rem 2rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: 2px solid transparent;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+        }
+
+        .btn-primary {
+            background-color: #2563eb;
+            color: white;
+            border-color: #2563eb;
+        }
+
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+            border-color: #1d4ed8;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #2563eb;
+            border-color: #2563eb;
+        }
+
+        .btn-secondary:hover {
+            background-color: #2563eb;
+            color: white;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #1e293b;
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3,
+        .footer-section h4 {
+            color: #60a5fa;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section p {
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: #60a5fa;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #374151;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: #60a5fa;
+        }
+
+        .footer-contact p {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            padding-top: 2rem;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            color: #ffffff;
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 80px;
+                flex-direction: column;
+                background: linear-gradient(135deg, #1e40af 0%, #64748b 100%);
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 27px rgba(30, 64, 175, 0.3);
+                padding: 2rem 0;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .nav-item {
+                margin: 1rem 0;
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            .page-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-card {
+                padding: 2rem;
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-content h2 {
+                font-size: 2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 280px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+
+            .section-header h2 {
+                font-size: 1.8rem;
+            }
+
+            .service-card {
+                padding: 1.5rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .slide-in-left {
+            animation: slideInLeft 0.8s ease-out;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="./index.html">Next Horizon Talent</a></h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-link" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <div class="industry-header">
+                        <a href="./industries.html" class="nav-link">Industries</a>
+                        <button id="industryToggle" class="dropdown-btn">▼</button>
+                    </div>
+                    <ul class="dropdown-menu" id="industriesMenu">
+                        <li><a href="./IT.html">Information Technology</a></li>
+                        <li><a href="./healthCare.html">Healthcare</a></li>
+                        <li><a href="./pharmaceutical.html">Pharmaceutical</a></li>
+                        <li><a href="./administrative.html">Administrative</a></li>
+                        <li><a href="./HR.html">Human Resources</a></li>
+                        <li><a href="./engineering.html">Engineering</a></li>
+                        <li><a href="./accounting.html">Accounting And Finance</a></li>
+                        <li><a href="./legal.html">Legal</a></li>
+                        <li><a href="./manufacturing.html">Manufacturing</a></li>
+                        <li><a href="./construction.html">Construction</a></li>
+                        <li><a href="./creative.html">Creative & Digital Marketing</a></li>
+                        <li><a href="./sales.html">Sales & Marketing</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="./contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./Employers.html" class="nav-link">Employers</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content fade-in-up">
+                <h1>Industries</h1>
+                <p>
+                    The satisfaction of employers and job seekers is our Top Priority.
+                    We multiply our efforts at every stage of the hiring cycle, practice
+                    transparency, and provide personal care to ensure the right talent
+                    meets the right opportunity.
+                </p>
+                <div class="breadcrumb">
+                    <a href="./index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Services</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Information Technology</h3>
+                    <p>
+                        The days of purpose-built machines are over. Fast, accurate
+                        exchange of information is the lifeblood of today’s business
+                        world, and no one knows that better than Information Technology
+                        professionals. These systems experts create the infrastructure
+                        required to facilitate swift communication ,…
+                    </p>
+                    <div style="margin-left: 12rem">
+                        <p><a href="./IT.html">View more</a></p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Human Resources</h3>
+                    <p>
+                        Managing your talent effectively allows you to get the most out of each employee, boost your
+                        revenue and
+                        retain your top performers. Finding the right Human Resources hires to oversee these essential
+                        roles can
+                        take a lot of time and attention that you could be spending on your core business competencies…
+                    </p>
+                    <div style="margin-left: 12rem">
+                        <p><a href="./HR.html">View more</a></p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3> Engineering</h3>
+                    <p>
+
+                        Hiring the right Engineering team for your business requires substantial resources that you may
+                        not have
+                        available. You don't want to end up with subpar personnel that can't do the job! Next Horizon
+                        Talent uses a
+                        high-quality recruitment process that can fulfill any of your engineering needs...
+                    </p>
+                    <div style="margin-left: 12rem">
+                        <p><a href="./IT.html">View more</a></p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <h3> Accounting and Finance</h3>
+                    <p>
+
+                        Your company handles multiple Accounting and Finance matters every day, and effectively handling
+                        these
+                        processes is essential to growing your business. Next Horizon Talent helps you hire the best
+                        professionals
+                        to help you
+                        succeed, whether you need contract, contract to hire, or perm resources...
+                    </p>
+                    <div style="margin-left: 12rem">
+                        <p><a href="./accounting.html">View more</a></p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Legal</h3>
+                    <p>
+                        Legal Services is a critical need with companies in every type of industry. This profession has
+                        a dynamic,
+                        fast-changing environment due to a combination of technology and globalization. The legal field
+                        is not only
+                        local—it’s a far-reaching industry with a great deal of growth both domestically and
+                        internationally.…
+                    </p>
+                    <div style="margin-left: 12rem">
+                        <p><a href="./legal.html">View more</a></p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Manufacturing</h3>
+                    <p>
+                        Manufacturing jobs are the ones that directly make new products either from raw materials or
+                        from pre-made
+                        components. Manufacturing jobs are rampantly present in mills, factories and plants. These jobs
+                        can even be
+                        found in homes, as long as just products are created and not services,...
+                    </p>
+                    <div style="margin-left: 12rem">
+                        <p><a href="./manufacturing.html">View more</a></p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Sales and Marketing</h3>
+                    <p>
+                        Is your company finding it difficult to fill sales & marketing jobs? Then, it is time you get in
+                        touch with
+                        Next Horizon Talent. As a specialized recruitment firm, we very well understand the difficulty
+                        in filling
+                        these
+                        vacancies. These jobs need special traits and qualifications to be fruitful and, our recruiters
+                        know how to
+                        make them so,...
+
+
+                    </p>
+                    <div style="margin-left: 12rem">
+                        <p><a href="./sales.html">View more</a></p>
+                    </div>
+                </div>
+
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Creative & Digital Marketing</h3>
+                    <p>
+                        In the world of tough competition giving the edge of marketing & creative touch to your company
+                        is the base
+                        to achieve success. Our recruiters are masters in quickly finding you the right skilled
+                        marketing,
+                        advertising, creative, digital and public relations personnel. They ease your process of hiring
+                        the
+                        marketing and creative staff on a,...
+                    </p>
+                    <div style="margin-left: 12rem">
+                        <p><a href="./creative.html">View more</a></p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Healthcare</h3>
+                    <p>
+                        The healthcare industry rarely stops evolving, therefore, finding the best talent is crucial for
+                        your
+                        organization's success. And that’s where we come in. At Next Horizon Talent, we are specialists
+                        at
+                        connecting you with
+                        both clinical and non-clinical experts who will surely become invaluable additions to your
+                        team,…
+                    </p>
+                    <div style="margin-left: 12rem">
+                        <p><a href="./healthCare.html">View more</a></p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Administrative</h3>
+                    <p>
+                        Administrative jobs encompass an array of functions. People working in this sector do a wide
+                        variety of
+                        duties. They and their functions are a vital part of every company. The regular duties consist
+                        of general
+                        office management, speaking with clients, answering phones, helping an employer, clerical works
+                        and others.
+                        ,…
+                    </p>
+                    <div style="margin-left: 12rem">
+                        <p><a href="./administrative.html">View more</a></p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Pharmaceutical</h3>
+                    <p>
+                        The role of the pharmaceutical industry goes beyond nations as it is the core of human health.
+                        The industry
+                        needs people with a lot much patience and skill for it to be successful. Overall human evolution
+                        directly
+                        depends on the progress of this industry and, as such, the,…
+                    </p>
+                    <div style="margin-left: 12rem">
+                        <p><a href="./pharmaceutical.html">View more</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Career?</h2>
+                <p>
+                    Join hundreds of successful IT professionals who have achieved their
+                    American dream with Next Horizon Talent. Let's start your journey
+                    today.
+                </p>
+                <div class="cta-buttons">
+                    <a href="./contact.html" class="btn btn-primary">Get Started Now</a>
+                    <a href="./about.html" class="btn btn-secondary">Learn More About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Next Horizon Talent</h3>
+                    <p>
+                        Your trusted partner for IT, Non-IT career success in the USA. Connecting talent with American
+                        opportunities through ethical and transparent practices.
+                    </p>
+                    <div class="social-links">
+                        <a href="http://linkedin.com/company/nexorizontalent" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./industries.html">Industries</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="./services.html">IT, Non-IT Job Placement</a></li>
+                        <li><a href="./services.html">Resume Building</a></li>
+                        <li><a href="./services.html">Interview Coaching</a></li>
+                        <!-- <li><a href="./services.html">Visa Support</a></li>
+                          -->
+                        <li><a href="./services.html">Career Counseling</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i> 30 N Gould St Ste R
+                            Sheridan WY 82801
+                        </p>
+
+                        <p><i class="fas fa-phone"></i> +1 626 309 9569</p>
+                        <p><i class="fas fa-envelope"></i> info@nexthorizontalents.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2024 Next Horizon Talent. All rights reserved. |
+                    <a href="./privacy-policy.html">Privacy Policy</a> |
+                    <a href="./terms&conditions.html">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const mobileMenu = document.getElementById("mobile-menu");
+        const navMenu = document.getElementById("nav-menu");
+
+        mobileMenu.addEventListener("click", () => {
+            mobileMenu.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll(".nav-link").forEach((link) => {
+            link.addEventListener("click", () => {
+                mobileMenu.classList.remove("active");
+                navMenu.classList.remove("active");
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener("scroll", () => {
+            const navbar = document.getElementById("navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute("href"));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: "smooth",
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px",
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document
+            .querySelectorAll(".service-card, .process-step")
+            .forEach((el) => {
+                el.style.opacity = "0";
+                el.style.transform = "translateY(30px)";
+                el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+                observer.observe(el);
+            });
+
+        // Button hover effects
+        document.querySelectorAll(".btn-primary").forEach((btn) => {
+            btn.addEventListener("mouseenter", function () {
+                this.style.backgroundColor = "#1d4ed8";
+                this.style.borderColor = "#1d4ed8";
+                this.style.transform = "translateY(-1px)";
+                this.style.boxShadow = "0 4px 12px rgba(37, 99, 235, 0.3)";
+            });
+
+            btn.addEventListener("mouseleave", function () {
+                this.style.backgroundColor = "#2563eb";
+                this.style.borderColor = "#2563eb";
+                this.style.transform = "translateY(0)";
+                this.style.boxShadow = "none";
+            });
+        });
+
+        document.querySelectorAll(".btn-secondary").forEach((btn) => {
+            btn.addEventListener("mouseenter", function () {
+                this.style.backgroundColor = "#2563eb";
+                this.style.color = "white";
+                this.style.transform = "translateY(-1px)";
+                this.style.boxShadow = "0 4px 12px rgba(37, 99, 235, 0.2)";
+            });
+
+            btn.addEventListener("mouseleave", function () {
+                this.style.backgroundColor = "transparent";
+                this.style.color = "#2563eb";
+                this.style.transform = "translateY(0)";
+                this.style.boxShadow = "none";
+            });
+        });
+
+        // Loading animation
+        window.addEventListener("load", () => {
+            document.body.classList.add("loaded");
+        });
+
+        // Service card hover effects
+        document.querySelectorAll(".service-card").forEach((card) => {
+            card.addEventListener("mouseenter", function () {
+                this.style.transform = "translateY(-10px)";
+                this.style.boxShadow = "0 20px 40px rgba(0, 0, 0, 0.15)";
+            });
+
+            card.addEventListener("mouseleave", function () {
+                this.style.transform = "translateY(0)";
+                this.style.boxShadow = "0 10px 30px rgba(0, 0, 0, 0.1)";
+            });
+        });
+    </script>
+    <script src="industries.js"></script>
+</body>
+
+</html>

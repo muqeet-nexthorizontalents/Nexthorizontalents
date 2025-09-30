@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employers - Next Horizon Talent</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Base Styling (From index.html) */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background: linear-gradient(96deg, #0c0c0c 0%, #061a37 100%);
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: #1e293b;
+            box-shadow: 0 4px 20px rgba(30, 64, 175, 0.3);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .nav-logo a {
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: #e2e8f0;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            color: #60a5fa;
+        }
+
+        /* Hero with Form */
+        .hero-form-section {
+            padding: 140px 0 80px;
+
+        }
+
+        .hero-form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-form-text h1 {
+            font-size: 2.8rem;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .hero-form-text p {
+            font-size: 1.1rem;
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        .employer-form {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .employer-form h3 {
+            color: #fff;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .employer-form input {
+            width: 100%;
+            padding: 0.9rem;
+            margin-bottom: 1rem;
+            border: 1px solid #374151;
+            border-radius: 6px;
+            background: #1e293b;
+            color: #fff;
+            font-size: 1rem;
+            transition: border 0.3s ease;
+        }
+
+        .employer-form input:focus {
+            border-color: #60a5fa;
+            outline: none;
+        }
+
+        .btn-primary {
+            background-color: #2563eb;
+            color: white;
+            padding: 0.875rem 2rem;
+            font-weight: 600;
+            border-radius: 0.5rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 80px 20px;
+            background: #0c0c0c;
+
+        }
+
+        .about-section h2 {
+            font-size: 2.5rem;
+            color: #60a5fa;
+            margin-bottom: 2rem;
+        }
+
+        .about-grid {
+            max-width: 900px;
+            margin: auto;
+            text-align: left;
+        }
+
+        .about-grid p {
+            color: #cbd5e1;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer (Copied from index.html) */
+        .footer {
+            background-color: #1e293b;
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3,
+        .footer-section h4 {
+            color: #60a5fa;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section p {
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            color: #60a5fa;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #374151;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+        }
+
+        .social-links a:hover {
+            background-color: #60a5fa;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            padding-top: 2rem;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            color: white;
+            margin: 0;
+        }
+
+        /* thank you msg */
+        .success-message {
+    display: none;
+    margin-top: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    background-color: #16a34a;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+.success-message.show {
+    display: block;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="nav-logo">
+                <a href="./index.html">Next Horizon Talent</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="./index.html" class="nav-link">Home</a></li>
+                <li><a href="./about.html" class="nav-link">About</a></li>
+                <li><a href="./services.html" class="nav-link">Services</a></li>
+                <li><a href="./industries.html" class="nav-link">Industries</a></li>
+                <li><a href="./contact.html" class="nav-link">Contact</a></li>
+                <li><a href="./employers.html" class="nav-link active">Employers</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero + Form -->
+    <section class="hero-form-section">
+        <div class="container hero-form-grid">
+            <div class="hero-form-text">
+                <h1>We Make Hiring Easy</h1>
+                <p>Partner with us to connect with top-tier talent through ethical practices, transparency, and
+                    results-driven recruitment.
+                    Our team bridges the gap between talent and opportunity, making the hiring process seamless for you.
+                </p>
+            </div>
+            <div class="employer-form">
+                <form id="employerForm">
+                    <input type="text" name="firstname" placeholder="First Name" required>
+                    <input type="text" name="lastname" placeholder="Last Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="tel" name="phone" placeholder="Phone Number" required>
+                    <input type="text" name="company" placeholder="Company Name" required>
+                    <button type="submit" id="employerSubmitBtn" class="btn-primary">Get Started</button>
+                </form>
+                 <div id="employerSuccessMessage" class="success-message">
+✅ Thank you! We have received your form. We'll get back to you within 24 hours.
+</div>
+            </div>
+           
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-section">
+        <div class="container">
+            <h2>Our Journey</h2>
+            <div class="about-grid">
+                <p>From a vision to reality – transforming careers and connecting dreams with opportunities. Founded by
+                    experienced professionals who understand both the tech landscape and the American job market, Next
+                    Horizon Talent was born from a simple vision: to help talented IT professionals achieve their dreams
+                    of working in the United States.</p>
+                <p>Our founders, having successfully navigated their own journey from India to establishing careers in
+                    the US, recognized the challenges faced by aspiring professionals. This personal experience drives
+                    our commitment to providing authentic, transparent, and effective career placement services.</p>
+                <p>With over a decade of combined experience in recruitment, career counseling, and cross-cultural
+                    business practices, our team has developed a deep understanding of what it takes to succeed in the
+                    competitive American job market while maintaining the values and work ethic that make professionals
+                    exceptional.</p>
+            </div>
+            <div>
+                <h2>Why Next Horizon Talent....?</h2>
+                <p> At Next Horizon Talent, we believe that every career journey begins with a dream — a dream to
+                    achieve something greater, to cross boundaries, and to build a future filled with opportunities. Our
+                    mission is to turn that dream into reality by bridging the gap between ambitious talent and the
+                    thriving American job market. More than just a placement firm, we are a trusted partner who stands
+                    with you at every stage of your professional journey.</p>
+
+                <p>Our story is one of passion, dedication, and a commitment to ethical practices. We understand that
+                    the journey to finding the right job in the United States can be daunting. From navigating complex
+                    visa processes to adapting to a new work culture, the challenges are many. That’s why we focus on
+                    personalized guidance, ensuring that every candidate receives the support they need to succeed.</p>
+
+                <p>Next Horizon Talent was founded with a clear purpose: to empower IT and non-IT professionals from
+                    around the world to achieve their career aspirations in the United States.
+                </p>
+
+                <p> story began with a vision born from personal experience. Our founders, themselves IT professionals
+                    who successfully transitioned from India to established careers in the United States, recognized the
+                    unique challenges faced by talented individuals aspiring to work in the US. They knew the obstacles
+                    — navigating a new job market, adapting to cultural differences, and understanding the complex
+                    recruitment landscape. With this understanding, they created Next Horizon Talent to guide others
+                    through the same journey with transparency, authenticity, and care.</p>
+
+                <p>Over the years, we have transformed that vision into reality. With over a decade of combined
+                    experience in recruitment, career counseling, and cross-cultural business practices, our team has
+                    helped hundreds of professionals successfully land roles in the United States. Today, we proudly
+                    celebrate 500 successful placements, a 99% success rate, 50+ partner companies, and an average
+                    placement time of just 30 days. These numbers are not just statistics — they reflect lives
+                    transformed, careers built, and dreams achieved.</p>
+
+                <p>Our mission is simple yet powerful: to help tech and non-tech talent find the right opportunities in
+                    the United States through ethical practices, personalized guidance, and unwavering support. We go
+                    beyond job placements. We focus on building long-term relationships that nurture growth, foster
+                    confidence, and ensure sustainable career success. We stand as a cultural bridge, helping
+                    professionals adapt to American work culture while embracing the values and strengths they carry
+                    from their own backgrounds.</p>
+
+                <p>At Next Horizon Talent, our vision is to become the most trusted and transparent placement partner
+                    for professionals around the globe. We envision a future where talent knows no borders and where
+                    opportunities are defined not by geography but by skill, dedication, and passion.</p>
+
+                <p>Our core values define who we are:</p>
+                <ul>
+                    <li><strong>Integrity:</strong> We operate with honesty, transparency, and ethics in every step we
+                        take.</li>
+                    <li><strong>Excellence:</strong> We strive to deliver the highest quality outcomes in resume
+                        building, interview preparation, and job placements.</li>
+                    <li><strong>Personalization:</strong> We recognize that every career journey is unique, and we craft
+                        solutions tailored to individual goals.</li>
+                    <li><strong>Cultural Bridge:</strong> We guide professionals in navigating cultural differences to
+                        thrive in new environments.</li>
+                    <li><strong>Innovation:</strong> We constantly evolve and embrace new technologies to stay ahead in
+                        career solutions.</li>
+                    <li><strong>Commitment:</strong> Our support doesn’t end with a placement; we are dedicated to
+                        long-term success.</li>
+                </ul>
+
+                <p>Why choose Next Horizon Talent? Because we don’t just connect you with opportunities — we walk with
+                    you on the path to achieving your American dream. With our personalized guidance, transparent
+                    approach, and proven track record, you can trust us to put your success at the center of everything
+                    we do. We are not just recruiters — we are mentors, advisors, and partners who ensure that your
+                    transition into the American job market is smooth, ethical, and effective.</p>
+
+                <p>Over the years, we have transformed that vision into reality. With over a decade of combined
+                    experience in recruitment, career counseling, and cross-cultural business practices, our team has
+                    helped hundreds of professionals successfully land roles in the United States. Today, we proudly
+                    celebrate 500 successful placements, a 99% success rate, 50+ partner companies, and an average
+                    placement time of just 30 days. These numbers are not just statistics — they reflect lives
+                    transformed, careers built, and dreams achieved.</p>
+
+
+
+                <p>Our mission is simple yet powerful: to help tech and non-tech talent find the right opportunities in
+                    the United States through ethical practices, personalized guidance, and unwavering support. We go
+                    beyond job placements. We focus on building long-term relationships that nurture growth, foster
+                    confidence, and ensure sustainable career success. We stand as a cultural bridge, helping
+                    professionals adapt to American work culture while embracing the values and strengths they carry
+                    from their own backgrounds.</p>
+
+                <p> Next Horizon Talent, our vision is to become the most trusted and transparent placement partner for
+                    professionals around the globe. We envision a future where talent knows no borders and where
+                    opportunities are defined not by geography but by skill, dedication, and passion.</p>
+
+                <p>Our core values define who we are:
+
+                    Integrity: We operate with honesty, transparency, and ethics in every step we take.
+
+                    Excellence: We strive to deliver the highest quality outcomes in resume building, interview
+                    preparation, and job placements.
+
+                    Personalization: We recognize that every career journey is unique, and we craft solutions tailored
+                    to individual goals.
+
+                    Cultural Bridge: We guide professionals in navigating cultural differences to thrive in new
+                    environments.
+
+                    Innovation: We constantly evolve and embrace new technologies to stay ahead in career solutions.
+
+                    Commitment: Our support doesn’t end with a placement; we are dedicated to long-term success.</p>
+                <p>
+                    Why choose Next Horizon Talent? Because we don’t just connect you with opportunities — we walk with
+                    you on the path to achieving your American dream. With our personalized guidance, transparent
+                    approach, and proven track record, you can trust us to put your success at the center of everything
+                    we do. We are not just recruiters — we are mentors, advisors, and partners who ensure that your
+                    transition into the American job market is smooth, ethical, and effective.</p>
+
+                <p>At Next Horizon Talent, we believe that every career journey begins with a dream — a dream to achieve
+                    something greater, to cross boundaries, and to build a future filled with opportunities. Our mission
+                    is to turn that dream into reality by bridging the gap between ambitious talent and the thriving
+                    American job market. More than just a placement firm, we are a trusted partner who stands with you
+                    at every stage of your professional journey.</p>
+
+                <p>Our story is one of passion, dedication, and a commitment to ethical practices. We understand that
+                    the journey to finding the right job in the United States can be daunting. From navigating complex
+                    visa processes to adapting to a new work culture, the challenges are many. That’s why we focus on
+                    personalized guidance, ensuring that every candidate receives the support they need to succeed.</p>
+
+                <p>Next Horizon Talent was founded with a clear purpose: to empower IT and non-IT professionals from
+                    around the world to achieve their career aspirations in the United States.</p>
+
+                <p>
+
+                <p>So, if you are ready to take the next step in your career, let us be your guide. Join the hundreds of
+                    professionals who have already transformed their careers with us. With Next Horizon Talent by your
+                    side, the journey to your American dream begins today.
+
+                    Next Horizon Talent – Your trusted partner for IT and Non-IT career success in the USA. Bridging
+                    talent with American opportunities through ethics, personalization, and commitment.</p>
+                <p>We are not just recruiters; we are mentors, advisors, and partners who ensure that your transition
+                    into the American job market is smooth, ethical, and effective.</p>
+                <p>So, if you are ready to take the next step in your career, let us be your guide. Join the hundreds of
+                    professionals who have already transformed their careers with us. With Next Horizon Talent by your
+                    side, the journey to your American dream begins today.</p>
+                <p>Next Horizon Talent – Your trusted partner for IT and Non-IT career success in the USA. Bridging
+                    talent with American opportunities through ethics, personalization, and commitment.</p>
+            </div>
+        </div>
+        </div>
+
+    
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Next Horizon Talent</h3>
+                    <p>Your trusted partner for IT, Non-IT career success in the USA. Connecting talent with American
+                        opportunities through ethical and transparent practices.</p>
+                    <div class="social-links">
+                        <a href="http://linkedin.com/company/nexorizontalent"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./industries.html">Industries</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="./services.html">IT, Non-IT Job Placement</a></li>
+                        <li><a href="./services.html">Resume Building</a></li>
+                        <li><a href="./services.html">Interview Coaching</a></li>
+                        <li><a href="./services.html">Career Counseling</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 30 N Gould Ste Sheridan Wyoming 82801</p>
+                    <p><i class="fas fa-phone"></i> +1 626 309 9569</p>
+                    <p><i class="fas fa-envelope"></i> info@nexthorizontalents.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Next Horizon Talent. All rights reserved. | <a href="./privacy-policy.html">Privacy
+                        Policy</a> | <a href="./terms&conditions.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const employerForm = document.getElementById("employerForm");
+        const submitBtn = document.getElementById("employerSubmitBtn");
+        const successMessage = document.getElementById("employerSuccessMessage");
+
+        const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwuncOZ3CAfb9cCb9dtUaKKDzM2lFTG1JyACVHlamsL0DbLO0eB1EW1uy3Oz7FYVsw6/exec"; // Replace with your script URL
+
+        if (employerForm) {
+            employerForm.addEventListener("submit", async (e) => {
+                e.preventDefault();
+
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                submitBtn.disabled = true;
+
+                const formData = new FormData(employerForm);
+                const data = {};
+                for (let [key, value] of formData.entries()) {
+                    data[key] = value.trim();
+                }
+
+                try {
+                    await fetch(WEB_APP_URL, {
+                        method: "POST",
+                        body: new URLSearchParams(data),
+                    });
+
+                    successMessage.classList.add("show");
+                    employerForm.reset();
+                    setTimeout(() => successMessage.classList.remove("show"), 5000);
+                } catch (err) {
+                    console.error("Error submitting Employers form:", err);
+                    alert("Something went wrong. Please try again.");
+                } finally {
+                    submitBtn.innerHTML = 'Get Started';
+                    submitBtn.disabled = false;
+                }
+            });
+        }
+    });
+</script>       

@@ -1,0 +1,1776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Next Horizon Talent - Your trusted partner for IT - Non IT career success in the USA. Connecting talent
+        with American opportunities through ethical and transparent practices.</title>
+    <meta name="description"
+        content="Leading IT, Non-IT Job Placement agency connecting talent with top US companies. 100+ successful placements, resume optimization, and career guidance.">
+    <meta name="keywords"
+        content="IT jobs USA, job placement, professionals, resume optimization, career guidance, software engineer jobs">
+    <meta name="author" content="Next Horizon Talent">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Next Horizon Talent - Your Gateway to IT, Non-IT Jobs in the USA">
+    <meta property="og:description"
+        content="Leading IT, Non-IT Job Placement agency connecting talent with top US companies. 100+ successful placements and career guidance.">
+    <meta property="og:image" content="https://nexthorizontalents.com/images/og-image.jpg">
+    <meta property="og:url" content="https://nexthorizontalents.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Next Horizon Talent">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Next Horizon Talent - Your Gateway to IT, Non-IT Jobs in the USA">
+    <meta name="twitter:description"
+        content="Leading IT, Non-IT Job Placement agency connecting talent with top US companies. 100+ successful placements and career guidance.">
+    <meta name="twitter:image" content="https://nexthorizontalents.com/images/twitter-image.jpg">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io (1)/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io (1)/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io (1)/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io (1)/site.webmanifest">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: linear-gradient(96deg, #0c0c0c 0%, #061a37 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation Styles */
+        .navbar {
+            background:#1e293b;
+            box-shadow: 0 4px 20px rgba(30, 64, 175, 0.3);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            background: #1e293b;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .nav-logo h2 {
+            color: #ffffff;
+            margin: 0;
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: linear-gradient(120deg, #1a2a6c, #50175f, #1bf1ed);
+            background-size: 400% 400%;
+            animation: gradient 5s ease infinite;
+            border-radius: 8px;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .nav-logo a {
+            color: whitesmoke;
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            align-items: center;
+        }
+
+        .nav-item {
+            margin-left: 1rem;
+            position: relative;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #e2e8f0;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+            white-space: nowrap;
+        }
+
+        .nav-link:hover {
+            color: #60a5fa;
+        }
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: linear-gradient(90deg, #60a5fa, #1e40af);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .industry-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .dropdown-btn {
+            background: none;
+            border: none;
+            color: #e2e8f0;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: transform 0.3s ease;
+        }
+
+        .dropdown-btn.active {
+            transform: rotate(180deg);
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            min-width: 250px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 1001;
+        }
+
+        .dropdown-menu.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-menu li {
+            margin: 0;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 12px 20px;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #f8fafc;
+            color: #1e40af;
+        }
+
+        /* Nav Search Bar Styles */
+        .nav-search {
+            display: flex;
+            align-items: center;
+            margin: 0 1rem;
+            position: relative;
+        }
+
+        .nav-search input {
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            width: 200px;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .nav-search input:focus {
+            width: 250px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .nav-search input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .nav-search button {
+            background: transparent;
+            border: none;
+            color: white;
+            cursor: pointer;
+            position: absolute;
+            right: 10px;
+        }
+
+        /* Search Results Dropdown */
+        .search-results {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-height: 400px;
+            overflow-y: auto;
+            display: none;
+            z-index: 1002;
+        }
+
+        .search-results.active {
+            display: block;
+        }
+
+        .search-result-item {
+            padding: 10px 15px;
+            border-bottom: 1px solid #f1f5f9;
+            color: #333;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .search-result-item:hover {
+            background-color: #f8fafc;
+        }
+
+        .search-result-item:last-child {
+            border-bottom: none;
+        }
+
+        .no-results {
+            padding: 15px;
+            color: #64748b;
+            text-align: center;
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            background-color: #e2e8f0;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 120px 2rem 2rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e1 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-bg-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:linear-gradient(96deg, #0c0c0c 0%, #061a37 100%);
+            z-index: 0;
+        }
+
+        .hero-container {
+            max-width: 800px;
+            text-align: center;
+            padding: 3rem 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #1e40af;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #1e40af 0%, #64748b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.1;
+            margin-bottom: 2rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-description {
+            font-size: 1.125rem;
+            color:white;
+            line-height: 1.7;
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* SEARCH: Layout */
+.search-hero {
+    margin: 34px 0 32px;
+    padding-left: 21px;
+};
+
+.search-title {
+  margin: 0 0 12px;
+  font-size: 1.6rem;
+  color: #18FFFF;
+  text-shadow: 0 0 16px #18FFFF88;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(20,20,40,0.7);
+  border-radius: 99px;
+  padding: 6px 12px 10px 16px;
+  box-shadow: 0 0 18px #18FFFF33, inset 0 0 12px #001a24;
+  border: 1px solid rgba(24,255,255,0.25);
+  transition: box-shadow 0.25s ease, transform 0.25s ease, border 0.25s ease;
+}
+.search-bar:focus-within {
+  box-shadow: 0 0 26px #18FFFF77, inset 0 0 14px #002a36;
+  border: 1px solid #18FFFFAA;
+  transform: translateY(-1px);
+}
+.search-bar input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #E0E0E0;
+  font-size: 1.05rem;
+  padding: 10px 6px;
+}
+.search-bar input::placeholder {
+  color: #b5e7e7;
+  opacity: 0.7;
+}
+.search-bar button {
+  position: relative;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 999px;
+  height: 44px;
+  min-width: 44px;
+  padding: 0 16px;
+  background: linear-gradient(135deg, #18FFFF, #00E676);
+  color: #0b1c22;
+  font-weight: 700;
+  box-shadow: 0 0 16px #18FFFF88;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+}
+.search-bar button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 24px #18FFFFBB;
+}
+.search-bar button:active {
+  transform: scale(0.98);
+}
+.search-icon {
+  font-size: 1.2rem;
+}
+
+/* Click ripple effect */
+.search-bar button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at var(--x,50%) var(--y,50%), rgba(255,255,255,0.55), transparent 45%);
+  opacity: 0;
+  transition: opacity 0.45s ease;
+}
+.search-bar button.ripple::after {
+  opacity: 1;
+  animation: rippleFade 0.55s ease forwards;
+}
+
+/* Search Bar Suggestions Styling */
+.nav-search {
+    position: relative;
+    margin: 0 15px;
+    width: 250px;
+}
+
+.nav-search input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.nav-search input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(96, 165, 250, 0.5);
+}
+
+.nav-search input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #1e293b;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none;
+    margin-top: 5px;
+    border: 1px solid rgba(96, 165, 250, 0.3);
+    border-top: none;
+}
+
+.search-results.active {
+    display: block;
+}
+
+.search-result-item {
+    padding: 12px 15px;
+    color: #e2e8f0;
+    text-decoration: none;
+    display: block;
+    transition: all 0.2s ease;
+    border-bottom: 1px solid rgba(96, 165, 250, 0.1);
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.search-result-item:hover {
+    background: rgba(96, 165, 250, 0.1);
+    color: white;
+    padding-left: 20px;
+}
+
+.search-result-item strong {
+    color: white;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.search-result-item span {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    display: block;
+}
+
+.no-results {
+    padding: 15px;
+    color: #94a3b8;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Search icon button */
+.nav-search button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+/* Scrollbar styling */
+.search-results::-webkit-scrollbar {
+    width: 6px;
+}
+
+.search-results::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10px 0;
+}
+
+.search-results::-webkit-scrollbar-thumb {
+    background: rgba(96, 165, 250, 0.5);
+    border-radius: 3px;
+}
+
+.search-results::-webkit-scrollbar-thumb:hover {
+    background: rgba(96, 165, 250, 0.7);
+}
+
+@keyframes rippleFade {
+  to { opacity: 0; }
+}
+
+/* Suggestion helper text */
+.search-suggestion {
+  margin-top: 8px;
+  font-size: 0.92rem;
+  color: #bfeff1;
+  opacity: 0.9;
+}
+
+/* Quick filter chips */
+.quick-filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+.chip {
+  background: rgba(24,255,255,0.12);
+  color: #e7ffff;
+  border: 1px solid rgba(24,255,255,0.35);
+  padding: 8px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 0 10px #18FFFF33;
+}
+.chip:hover {
+  background: rgba(24,255,255,0.22);
+  transform: translateY(-1px);
+  box-shadow: 0 0 16px #18FFFF55;
+}
+.chip:active {
+  transform: translateY(0);
+}
+
+/* Results container (optional placeholder) */
+#search-results {
+  margin-top: 18px;
+  border-top: 1px dashed rgba(24,255,255,0.25);
+  padding-top: 12px;
+  color: #E0E0E0;
+  font-size: 0.98rem;
+}
+
+/* Mobile */
+@media (max-width: 670px) {
+  .search-title { font-size: 1.3rem; }
+  .search-bar input { font-size: 1rem; }
+}
+
+
+        .btn {
+            padding: 0.875rem 2rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: 2px solid transparent;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+        }
+
+        .btn-primary {
+            background-color: #2563eb;
+            color: white;
+            border-color: #2563eb;
+        }
+
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+            border-color: #1d4ed8;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: white;
+            color: blue;
+            border-color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: blue;
+            color: white;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+        }
+
+        /* Highlights Section */
+        .highlights {
+            background: linear-gradient(135deg, #1e40af 0%, #64748b 100%);
+            color: white;
+            padding: 80px 0;
+            position: relative;
+        }
+
+
+        .highlights::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(96deg, #0c0c0c 0%, #061a37 100%);
+
+            z-index: 0;
+        }
+
+        .highlights-grid {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .highlight-item {
+            text-align: center;
+            padding: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .highlight-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .highlight-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #60a5fa;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .highlight-item h3 {
+            color: white;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .highlight-item p {
+            color:white;
+            line-height: 1.6;
+        }
+
+        /* Engagement Section */
+        .engagement-section {
+            padding: 100px 0;
+            background: linear-gradient(96deg, #0c0c0c 0%, #061a37 100%);
+;
+        }
+
+        .engagement-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .engagement-content h2 {
+            font-size: 3rem;
+            color: #1e40af;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+
+        .engagement-content p {
+            font-size: 1.1rem;
+            color: white;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .engagement-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .people-network {
+            position: relative;
+            width: 400px;
+            height: 300px;
+        }
+
+        .person-avatar {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 3px solid #2563eb;
+            background: #f8fafc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #2563eb;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .person-avatar:nth-child(1) {
+            top: 20px;
+            left: 50px;
+            animation-delay: 0s;
+        }
+
+        .person-avatar:nth-child(2) {
+            top: 50px;
+            right: 30px;
+            animation-delay: 0.5s;
+        }
+
+        .person-avatar:nth-child(3) {
+            bottom: 80px;
+            left: 20px;
+            animation-delay: 1s;
+        }
+
+        .person-avatar:nth-child(4) {
+            bottom: 40px;
+            right: 60px;
+            animation-delay: 1.5s;
+        }
+
+        .person-avatar:nth-child(5) {
+            top: 120px;
+            left: 150px;
+            animation-delay: 2s;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Job Interest Section */
+        .job-interest-section {
+            padding: 100px 0;
+            background:linear-gradient(96deg, #0c0c0c 0%, #061a37 100%);
+
+            color: white;
+        }
+
+        .job-interest-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .job-interest-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+
+        .job-interest-content .highlight-text {
+            color: #60a5fa;
+        }
+
+        .job-interest-content p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+            color: white;
+        }
+
+        .job-features {
+            list-style: none;
+           margin-left: auto;
+        }
+
+        .job-features li {
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .job-features li::before {
+            content: "•";
+            color: #60a5fa;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .job-interest-image {
+            position: relative;
+        }
+
+        .job-interest-image img {
+            width: 100%;
+            height: 100;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        /* How It Works Section */
+        .how-it-works {
+            padding: 100px 0;
+            background:linear-gradient(96deg, #0c0c0c 0%, #061a37 100%);
+;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: #1e40af;
+            margin-bottom: 1rem;
+        }
+
+        .section-header .highlight-text {
+            color: #2563eb;
+        }
+
+        .section-header p {
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .steps-container {
+            display: flex;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .steps-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+        }
+
+        .step-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background: linear-gradient(96deg, #0c0c0c 0%, #061a37 100%);
+;
+            border-radius: 10px;
+         
+            transition: transform 0.3s ease;
+        }
+
+        .step-item:hover {
+            transform: translateX(10px);
+               box-shadow: 0 5px 15px rgba(226, 226, 226, 0.73);
+        }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: #2563eb;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .step-content h3 {
+            color: #1e40af;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .step-content p {
+            color: white;
+            line-height: 1.6;
+        }
+
+        .steps-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .steps-visual img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        /* Testimonials Section */
+        .testimonials {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .testimonial-image {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-image img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #1e40af;
+        }
+
+        .testimonial-content p {
+            font-style: italic;
+            color: white;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .testimonial-author h4 {
+            color: #1e40af;
+            margin-bottom: 0.5rem;
+        }
+
+        .testimonial-author span {
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #1e293b;
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3,
+        .footer-section h4 {
+            color: #60a5fa;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section p {
+            color: white;
+            line-height: 1.6;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: #60a5fa;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #374151;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: #60a5fa;
+        }
+
+        .footer-contact p {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            padding-top: 2rem;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            color: white;
+            margin: 0;
+        }
+        
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .nav-search input {
+                width: 150px;
+            }
+            
+            .nav-search input:focus {
+                width: 180px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 80px;
+                flex-direction: column;
+                background: linear-gradient(135deg, #1e40af 0%, #64748b 100%);
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 27px rgba(30, 64, 175, 0.3);
+                padding: 2rem 0;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .nav-item {
+                margin: 1rem 0;
+            }
+
+            .nav-search {
+                display: none;
+            }
+
+            .mobile-search {
+                display: block;
+                margin: 1rem auto;
+                width: 90%;
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-description {
+                font-size: 1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn,
+            .btn-primary,
+            .btn-secondary {
+                width: 100% !important;
+                max-width: 100% !important;
+                display: block;
+                margin: 0 auto 10px;
+                text-align: center;
+            }
+        }
+
+        .engagement-container,
+        .job-interest-container,
+        .steps-container {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .engagement-content h2 {
+            font-size: 2rem;
+        }
+
+        .job-interest-content h2 {
+            font-size: 2rem;
+        }
+
+        .people-network {
+            width: 300px;
+            height: 200px;
+        }
+
+        .person-avatar {
+            width: 50px;
+            height: 50px;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 480px) {
+            .hero-container {
+                padding: 2rem 1rem;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+                color: white;
+            }
+
+            .hero-badge {
+                font-size: 0.8rem;
+            }
+
+            .engagement-content h2 {
+                font-size: 1.8rem;
+            }
+
+            .job-interest-content h2 {
+                font-size: 1.8rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Next Horizon Talent</h2>
+            </div>
+            <div class="nav-search">
+                <input type="text" id="nav-search-input" placeholder="Search jobs, services..." autocomplete="off">
+                <button id="nav-search-btn"><i class="fas fa-search"></i></button>
+                <div class="search-results" id="search-results-dropdown"></div>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-link" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <div class="industry-header">
+                        <a href="./industries.html" class="nav-link">Industries</a>
+                        <button id="industryToggle" class="dropdown-btn">▼</button>
+                    </div>
+                    <ul class="dropdown-menu" id="industriesMenu">
+                        <li><a href="./IT.html">Information Technology</a></li>
+                        <li><a href="./healthCare.html">Healthcare</a></li>
+                        <li><a href="./pharmaceutical.html">Pharmaceutical</a></li>
+                        <li><a href="./administrative.html">Administrative</a></li>
+                        <li><a href="./HR.html">Human Resources</a></li>
+                        <li><a href="./engineering.html">Engineering</a></li>
+                        <li><a href="./accounting.html">Accounting And Finance</a></li>
+                        <li><a href="./legal.html">Legal</a></li>
+                        <li><a href="./manufacturing.html">Manufacturing</a></li>
+                        <li><a href="./construction.html">Construction</a></li>
+                        <li><a href="./creative.html">Creative & Digital Marketing</a></li>
+                        <li><a href="./sales.html">Sales & Marketing</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="./contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./Employers.html" class="nav-link">Employers</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg-pattern"></div>
+        <div class="hero-container fade-in-up">
+            <div class="hero-badge">WE ARE #1 ON THE MARKET</div>
+            <h1 class="hero-title">Find your job build your career</h1>
+            <p class="hero-description">
+                We understand that for you, it's never just a job. It's your business. That's why we are passionate
+                about not only finding you a quality employee, but also the perfect fit for your career aspirations and
+                professional growth.
+            </p>
+            <div class="hero-buttons">
+                <a href="./discoverjobs.html" class="btn btn-primary ">DISCOVER JOBS</a>
+                <a href="./contact.html" class="btn btn-secondary">FREE CONSULTATION</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="highlights">
+        <div class="container">
+            <div class="highlights-grid">
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>100+ Placements</h3>
+                    <p>Successfully placed over 100 professionals in top US companies</p>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Resume Guidance</h3>
+                    <p>Expert resume optimization tailored for the US job market</p>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>USA Office</h3>
+                    <p>Dedicated US-based team providing local support and connections</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engagement Section -->
+    <section class="engagement-section">
+        <div class="container">
+            <div class="engagement-container">
+                <div class="engagement-content">
+                    <h2>More than 100000+ people engaged</h2>
+                    <p>Do you know what could beat the exciting feeling of having a new career opportunity? Making your
+                        own path to success. Building your career from the ground up is not only fulfilling but also
+                        opens doors to endless possibilities in the competitive job market.</p>
+                    <a href="./discoverjobs.html" class="btn btn-primary">DISCOVER JOBS</a>
+                </div>
+                <div class="engagement-visual">
+                    <video src="world.mp4" style="width: 80%;" autoplay loop muted></video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Interest Section -->
+    <section class="job-interest-section">
+        <div class="container">
+            <div class="job-interest-container">
+                <div class="job-interest-content">
+                    <h2>Find your perfect job based on <span class="highlight-text">your interest</span></h2>
+                    <p>Do you know what could beat the exciting feeling of having a new career opportunity? Make your
+                        own path. Building your career from the ground up is not only fulfilling but also more rewarding
+                        in the long run.</p>
+                    <ul class="job-features">
+                        <li>Find full-time jobs and internships that are perfect for you</li>
+                        <li>Get more personalized job recommendations directly</li>
+                        <li>Explore job roles based on your study major and interests</li>
+                    </ul>
+                    <a href="./discoverjobs.html" class="btn btn-secondary" style="margin-top: 3rem;">GET STARTED NOW</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How <span class="highlight-text">Next Horizon Talent</span> Works</h2>
+                <p>Our streamlined process ensures you get the best career opportunities tailored to your skills and
+                    aspirations</p>
+            </div>
+            <div class="steps-container">
+                <div class="steps-list">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Resume Assessments</h3>
+                            <p>Our expert team conducts comprehensive resume evaluations to optimize your profile for
+                                the US job market, ensuring ATS compatibility and industry-specific keywords.</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Job Fit Scoring</h3>
+                            <p>Advanced matching algorithms analyze your skills, experience, and preferences to identify
+                                the most suitable job opportunities with high success probability.</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Top-Notch Support</h3>
+                            <p>Receive personalized career guidance, interview preparation, and ongoing support from our
+                                US-based team throughout your job search journey.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Next Horizon Talent</h3>
+                    <p>Your trusted partner for IT, Non-IT career success in the USA. Connecting talent with American
+            opportunities through ethical and transparent practices.</p>
+                    <div class="social-links">
+                        <a href="http://linkedin.com/company/nexorizontalent" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                         <li><a href="./industries.html">Industries</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="./services.html">IT, Non-IT Job Placement</a></li>
+                        <li><a href="./services.html">Resume Building</a></li>
+                        <li><a href="./services.html">Interview Coaching</a></li>
+                        <li><a href="./services.html">Career Counseling</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> 30 N Gould Ste Sheridan Wyoming 82801</p>
+                        <p><i class="fas fa-phone"></i> +1 626 309 9569</p>
+                        <p><i class="fas fa-envelope"></i> info@nexthorizontalents.com</p>
+                    </div>
+                </div>
+            </div>
+              <div class="footer-bottom">
+                    <p>
+                        &copy; 2024 Next Horizon Talent. All rights reserved. |
+                        <a href="./privacy-policy.html">Privacy Policy</a> |
+                        <a href="./terms&conditions.html">Terms of Service</a>
+                    </p>
+                </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const mobileMenu = document.getElementById("mobile-menu");
+        const navMenu = document.getElementById("nav-menu");
+
+        mobileMenu.addEventListener("click", () => {
+            mobileMenu.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll(".nav-link").forEach((link) => {
+            link.addEventListener("click", () => {
+                mobileMenu.classList.remove("active");
+                navMenu.classList.remove("active");
+            });
+        });
+
+        // Industries Dropdown Toggle
+        const industryToggle = document.getElementById("industryToggle");
+        const industriesMenu = document.getElementById("industriesMenu");
+
+        industryToggle.addEventListener("click", (e) => {
+            e.preventDefault();
+            industryToggle.classList.toggle("active");
+            industriesMenu.classList.toggle("active");
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener("click", (e) => {
+            if (!e.target.closest(".dropdown")) {
+                industryToggle.classList.remove("active");
+                industriesMenu.classList.remove("active");
+            }
+        });
+
+        // Search functionality
+        const searchInput = document.getElementById("nav-search-input");
+        const searchBtn = document.getElementById("nav-search-btn");
+        const searchResults = document.getElementById("search-results-dropdown");
+
+        // Sample data for search (replace with your actual data)
+        const searchData = [
+            { title: "IT Jobs", url: "./IT.html", type: "Industry" },
+            { title: "Healthcare Jobs", url: "./healthCare.html", type: "Industry" },
+            { title: "Engineering Jobs", url: "./engineering.html", type: "Industry" },
+            { title: "Resume Building", url: "./services.html", type: "Service" },
+            { title: "Interview Coaching", url: "./services.html", type: "Service" },
+            { title: "Career Counseling", url: "./services.html", type: "Service" },
+            { title: "About Us", url: "./about.html", type: "Page" },
+            { title: "Contact", url: "./contact.html", type: "Page" },
+            { title: "Employers", url: "./Employers.html", type: "Page" }
+        ];
+
+        function performSearch(query) {
+            if (!query.trim()) {
+                searchResults.innerHTML = "";
+                searchResults.classList.remove("active");
+                return;
+            }
+
+            const lowerQuery = query.toLowerCase();
+            const results = searchData.filter(item => 
+                item.title.toLowerCase().includes(lowerQuery) || 
+                item.type.toLowerCase().includes(lowerQuery)
+            );
+
+            if (results.length > 0) {
+                let html = "";
+                results.forEach(item => {
+                    html += `
+                        <a href="${item.url}" class="search-result-item">
+                            <strong>${item.title}</strong>
+                            <span style="display: block; font-size: 0.8rem; color: #64748b;">${item.type}</span>
+                        </a>
+                    `;
+                });
+                searchResults.innerHTML = html;
+                searchResults.classList.add("active");
+            } else {
+                searchResults.innerHTML = `<div class="no-results">No results found for "${query}"</div>`;
+                searchResults.classList.add("active");
+            }
+        }
+
+        // Search input event listeners
+        searchInput.addEventListener("input", (e) => {
+            performSearch(e.target.value);
+        });
+
+        searchInput.addEventListener("focus", () => {
+            if (searchInput.value.trim()) {
+                performSearch(searchInput.value);
+                searchResults.classList.add("active");
+            }
+        });
+
+        searchBtn.addEventListener("click", () => {
+            performSearch(searchInput.value);
+        });
+
+        // Close search results when clicking outside
+        document.addEventListener("click", (e) => {
+            if (!e.target.closest(".nav-search")) {
+                searchResults.classList.remove("active");
+            }
+        });
+
+        // Navbar scroll effect
+        window.addEventListener("scroll", () => {
+            const navbar = document.getElementById("navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute("href"));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: "smooth",
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px",
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll(".highlight-item, .testimonial-card, .step-item").forEach((el) => {
+            el.style.opacity = "0";
+            el.style.transform = "translateY(30px)";
+            el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+            observer.observe(el);
+        });
+
+        // Counter animation for highlights
+        function animateCounters() {
+            const counters = document.querySelectorAll(".highlight-item h3");
+
+            counters.forEach((counter) => {
+                const text = counter.textContent;
+                const number = text.match(/\d+/);
+
+                if (number) {
+                    const finalNumber = parseInt(number[0]);
+                    const prefix = text.substring(0, text.indexOf(number[0]));
+                    const suffix = text.substring(text.indexOf(number[0]) + number[0].length);
+
+                    let currentNumber = 0;
+                    const increment = finalNumber / 50;
+
+                    const timer = setInterval(() => {
+                        currentNumber += increment;
+                        if (currentNumber >= finalNumber) {
+                            counter.textContent = prefix + finalNumber + suffix;
+                            clearInterval(timer);
+                        } else {
+                            counter.textContent = prefix + Math.floor(currentNumber) + suffix;
+                        }
+                    }, 50);
+                }
+            });
+        }
+
+        // Trigger counter animation when highlights section is visible
+        const highlightsSection = document.querySelector(".highlights");
+        const highlightsObserver = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        animateCounters();
+                        highlightsObserver.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.5 }
+        );
+
+        if (highlightsSection) {
+            highlightsObserver.observe(highlightsSection);
+        }
+
+        // Loading animation
+        window.addEventListener("load", () => {
+            document.body.classList.add("loaded");
+        });
+
+        // Add active class to current navigation item
+        function setActiveNavItem() {
+            const sections = document.querySelectorAll("section[id]");
+            const navLinks = document.querySelectorAll(".nav-link");
+
+            window.addEventListener("scroll", () => {
+                let current = "";
+
+                sections.forEach((section) => {
+                    const sectionTop = section.offsetTop - 100;
+                    const sectionHeight = section.clientHeight;
+
+                    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                        current = section.getAttribute("id");
+                    }
+                });
+
+                navLinks.forEach((link) => {
+                    link.classList.remove("active");
+                    if (link.getAttribute("href") === `#${current}`) {
+                        link.classList.add("active");
+                    }
+                });
+            });
+        }
+
+        // Initialize active nav item tracking
+        setActiveNavItem();
+
+        // Button hover effects
+        document.querySelectorAll('.btn-primary').forEach(btn => {
+            btn.addEventListener('mouseenter', function () {
+                this.style.backgroundColor = '#1d4ed8';
+                this.style.borderColor = '#1d4ed8';
+                this.style.transform = 'translateY(-1px)';
+                this.style.boxShadow = '0 4px 12px rgba(37, 99, 235, 0.3)';
+            });
+
+            btn.addEventListener('mouseleave', function () {
+                this.style.backgroundColor = '#2563eb';
+                this.style.borderColor = '#2563eb';
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = 'none';
+            });
+        });
+
+        document.querySelectorAll('.btn-secondary').forEach(btn => {
+            btn.addEventListener('mouseenter', function () {
+                this.style.backgroundColor = '#2563eb';
+                this.style.color = 'white';
+                this.style.transform = 'translateY(-1px)';
+                this.style.boxShadow = '0 4px 12px rgba(37, 99, 235, 0.2)';
+            });
+
+            btn.addEventListener('mouseleave', function () {
+                this.style.backgroundColor = 'white';
+                this.style.color = 'blue';
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
